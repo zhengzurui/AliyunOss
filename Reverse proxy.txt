@@ -1,0 +1,31 @@
+反向代理
+
+首先确保Apache有这些模块，在Apache根目录下确认有这些模块，主要包含以下模块：
+
+mod_proxy.so
+mod_proxy_ajp.so
+mod_proxy_balancer.so
+mod_proxy_connect.so
+mod_proxy_http.so
+打开配置conf/httpd.conf文件，将这些模块的注释去除，
+
+
+修改配置文件，打开虚拟主机配置文件，在文件</Directory>和</VirtualHost>中添加如下配置
+
+
+ProxyRequests Off
+
+<Proxy *>
+Order deny,allow
+Allow from all
+</Proxy>
+
+ProxyPass / http://iruirui.oss-cn-hongkong-internal.aliyuncs.com/
+ProxyPassReverse / http://iruirui.oss-cn-hongkong-internal.aliyuncs.com/
+
+
+
+
+
+
+===============================================================================
