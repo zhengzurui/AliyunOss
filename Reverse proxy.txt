@@ -1,16 +1,16 @@
-·´Ïò´úÀí
+åå‘ä»£ç†
 
-Ê×ÏÈÈ·±£ApacheÓĞÕâĞ©Ä£¿é£¬ÔÚApache¸ùÄ¿Â¼ÏÂÈ·ÈÏÓĞÕâĞ©Ä£¿é£¬Ö÷Òª°üº¬ÒÔÏÂÄ£¿é£º
+é¦–å…ˆç¡®ä¿Apacheæœ‰è¿™äº›æ¨¡å—ï¼Œåœ¨Apacheæ ¹ç›®å½•ä¸‹ç¡®è®¤æœ‰è¿™äº›æ¨¡å—ï¼Œä¸»è¦åŒ…å«ä»¥ä¸‹æ¨¡å—ï¼š
 
 mod_proxy.so
 mod_proxy_ajp.so
 mod_proxy_balancer.so
 mod_proxy_connect.so
 mod_proxy_http.so
-´ò¿ªÅäÖÃconf/httpd.confÎÄ¼ş£¬½«ÕâĞ©Ä£¿éµÄ×¢ÊÍÈ¥³ı£¬
+æ‰“å¼€é…ç½®conf/httpd.confæ–‡ä»¶ï¼Œå°†è¿™äº›æ¨¡å—çš„æ³¨é‡Šå»é™¤ï¼Œ
 
 
-ĞŞ¸ÄÅäÖÃÎÄ¼ş£¬´ò¿ªĞéÄâÖ÷»úÅäÖÃÎÄ¼ş£¬ÔÚÎÄ¼ş</Directory>ºÍ</VirtualHost>ÖĞÌí¼ÓÈçÏÂÅäÖÃ
+ä¿®æ”¹é…ç½®æ–‡ä»¶ï¼Œæ‰“å¼€è™šæ‹Ÿä¸»æœºé…ç½®æ–‡ä»¶ï¼Œåœ¨æ–‡ä»¶</Directory>å’Œ</VirtualHost>ä¸­æ·»åŠ å¦‚ä¸‹é…ç½®
 
 
 ProxyRequests Off
@@ -20,8 +20,8 @@ Order deny,allow
 Allow from all
 </Proxy>
 
-ProxyPass / http://iruirui.oss-cn-hongkong-internal.aliyuncs.com/
-ProxyPassReverse / http://iruirui.oss-cn-hongkong-internal.aliyuncs.com/
+ProxyPass / http://******.oss-cn-hongkong-internal.aliyuncs.com/
+ProxyPassReverse / http://******.oss-cn-hongkong-internal.aliyuncs.com/
 
 
 
